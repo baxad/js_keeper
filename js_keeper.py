@@ -23,7 +23,7 @@ Usage:
 ====================================
 """
 
-# Function to download JavaScript files
+
 def download_js(session, url, save_dir, headers, rate_limit):
     try:
         response = session.get(url, headers=headers)
@@ -38,7 +38,7 @@ def download_js(session, url, save_dir, headers, rate_limit):
     except Exception as e:
         print(f"Error downloading {url}: {e}")
 
-# Function to parse HTML and find JS files
+
 def parse_and_download(session, url, save_dir, headers, rate_limit):
     try:
         response = session.get(url, headers=headers)
@@ -56,7 +56,7 @@ def parse_and_download(session, url, save_dir, headers, rate_limit):
     except Exception as e:
         print(f"Error parsing {url}: {e}")
 
-# Main function to handle arguments and threading
+
 def main():
     parser = argparse.ArgumentParser(description='JS Keeper Script', add_help=False)
     parser.add_argument('-u', '--url', type=str, help='Single URL to parse')
