@@ -26,3 +26,35 @@ JS Keeper is a Python script designed to parse HTML responses from given URLs, f
 1. **Single URL:**
    ```sh
    python js_keeper.py -u http://example.com
+
+2. **List of URLs:**
+   ```sh
+   python js_keeper.py -l urls.txt
+
+3. **Using Threads:**
+   ```sh
+   python js_keeper.py -u http://example.com -t 4
+
+4. **Custom HTTP Headers:**
+   ```sh
+   python js_keeper.py -u http://example.com -h '{"User-Agent": "Mozilla/5.0"}'
+
+5. **Rate Limiting:**
+   ```sh
+   python js_keeper.py -u http://example.com -n 2
+
+## Installation
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/yourusername/js_keeper.git
+   cd js_keeper
+
+2. **Install the required packages:**
+   ```sh
+   pip install -r requirements.txt
+
+
+### Contributing:
+
+Contributions are welcome! Please create an issue or pull request if you have any improvements or suggestions.
+
