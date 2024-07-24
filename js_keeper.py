@@ -14,7 +14,7 @@ BANNER = """
           JS Keeper Script
 ====================================
 Usage:
-    -u, --url      : Single URL to parse
+    -u, --url      : Single URL to parse for javascript files
     -l, --list     : File containing list of URLs to parse
     -t, --threads  : Number of threads to use (default: 1)
     -h, --headers  : HTTP headers to be used with requests in JSON format
